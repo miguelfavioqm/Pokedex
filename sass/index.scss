@@ -1,0 +1,68 @@
+$color: #EF5350;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+}
+.banner{
+    height: 15vh;
+    background-image: url(../img/banner-pokemon-web-24-1-scaled.webp);
+    background-size: 100% 100%;
+    background-position: fixed;
+}
+
+.app{
+    background-color: $color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 1rem;
+    
+    &-statscontainer{
+        width: 100%;
+        display: flex;
+        &-names{
+            width: 25%;
+        }
+        &-bars{
+            width: 65%;
+            .progress{
+                height: 24px;
+            }
+        }
+        &-numbers{
+            width: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.electric{
+    box-shadow: 10px 10px 4rem yellow;
+    background-color: rgb(255, 255, 0) !important;
+}
+.grass{
+    box-shadow: 10px 10px 4rem green;
+    background-color: rgba(172, 255, 47, 0.829)!important;
+}
+.fire{
+    box-shadow: 10px 10px 4rem yellow;
+    background-color: rgba(255, 0, 0, 0.295) !important;
+}
