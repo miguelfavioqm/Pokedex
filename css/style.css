@@ -69,4 +69,20 @@
   background-color: rgba(255, 0, 0, 0.295) !important;
 }
 
+.water {
+  box-shadow: 10px 10px 4rem skyblue;
+  background-color: rgb(30, 177, 235) !important;
+}
+
+@media only screen and (min-width: 600px) {
+  .app {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .card {
+    width: 30%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
