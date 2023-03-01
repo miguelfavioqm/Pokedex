@@ -58,8 +58,8 @@ function createCard(data){
   cardStatsContainerNames.innerHTML = `<p>hp</p>
   <p>damage</p>
   <p>defense</p>
-  <p>sp attack</p>
-  <p>sp defense</p>
+  <p>attack</p>
+  <p>bulwark</p>
   <p>speed</p>
   `
   cardStatsContainer.appendChild(cardStatsContainerNames)

@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
 $color: #EF5350;
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
 }
 .container{
     width: 100%;
+    
 }
+#input{
+        font-size: 1rem;
+    }
 .banner{
     height: 15vh;
     background-image: url(../img/banner-pokemon-web-24-1-scaled.webp);
@@ -71,7 +77,10 @@ $color: #EF5350;
     background-color: rgb(30, 177, 235) !important;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
+    #input{
+        font-size: 2rem;
+    }
     .app{
         flex-direction: row;
         flex-wrap: wrap;
@@ -79,5 +88,9 @@ $color: #EF5350;
     }
     .card{
         width: 30%;
+    }
+    .banner{
+        height: 30vh;
+        // width: 100%;
     }
   }
